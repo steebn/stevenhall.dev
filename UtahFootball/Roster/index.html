@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>Utah Roster</title>
+    <!-- <link rel="manifest" href="manifest.json"> -->
+    <link rel="stylesheet" href="styles/main.min.css" />
+    <script defer type="text/javascript" src="scripts/main.min.js"></script>
+
+    <!-- <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Utah Roster">
+    <meta name="theme-color" content="#FF0000">
+    <meta name="msapplication-navbutton-color" content="#FF0000">
+    <meta name="msapplication-starturl" content="/index.html">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Utah Roster">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" sizes="128x128" href="../../UtahFootball/Roster/images/touch/icon-128x128.png">
+    <link rel="icon" sizes="192x192" href="./images/touch/icon-192x192.png">
+    <link rel="icon" sizes="256x256" href="./images/touch/icon-256x256.png">
+    <link rel="icon" sizes="384x384" href="./images/touch/icon-384x384.png">
+    <link rel="icon" sizes="512x512" href="./images/touch/icon-512x512.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="./images/touch/icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="./images/touch/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="./images/touch/icon-256x256.png">
+    <link rel="apple-touch-icon" sizes="384x384" href="./images/touch/icon-384x384.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="./images/touch/icon-512x512.png"> -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.20/fc-3.3.0/fh-3.1.6/r-2.2.3/sl-1.3.1/datatables.min.css" />
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.20/fc-3.3.0/fh-3.1.6/r-2.2.3/sl-1.3.1/datatables.js">
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153768658-1"></script> -->
+    <!-- <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-153768658-1');
+    </script> -->
+
+</head>
+
+<body>
+    <header>
+        <!-- <section id="installBanner" class="banner">
+            <button id="installBtn">Install app</button>
+        </section> -->
+        <h2>Utah Football Roster</h2>
+    </header>
+    <main>
+        <div id="tblRosterDiv">
+            <table id="tblRoster" class="table table-sm table-striped nowrap" style="width:400px">
+                <tfoot>
+                    <tr>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" results=5 class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="input-group input-group-sm">
+                                <input type="search" placeholder="&telrec;" class="form-control">
+                                <span class="clear hidden">&times;</span>
+                            </div>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div id="chartdiv">
+        </div>
+    </main>
+
+    <div id="loaderWrapper">
+        <div id="loader" class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </div>
+    <script>
+    </script>
+    <!-- <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => {
+                        console.log('Service worker registered! 😎', reg);
+                    })
+                    .catch(err => {
+                        console.log('😥 Service worker registration failed: ', err);
+                    });
+            });
+        } -->
+    </script>
+</body>
+
+</html>
