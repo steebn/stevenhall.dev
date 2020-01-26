@@ -1,0 +1,12 @@
+@media (max-width: 576px) {
+    main::after {
+        background-image: url(../images/touch/icon-512x512.png);
+
+    }
+}
+@media (max-width: 450px) {
+    main::after {
+        background-image: url(../images/touch/icon-384x384.png);
+
+    }
+}

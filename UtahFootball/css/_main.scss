@@ -1,0 +1,21 @@
+main {
+    position: absolute;
+    top: 70px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+
+    &::after {
+        content: "";
+        background-image: url(../images/logoUU.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.075;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
